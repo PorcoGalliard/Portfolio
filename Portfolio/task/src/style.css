@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../assets/images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+nav {
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 3;
+}
+
+h1 {
+    margin: 0 2em;
+    position: relative;
+    line-height: 50px;
+    top: 350px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    padding: 2px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row-reverse;
+    list-style-type: none;
+}
+
+nav ul li {
+    padding: 31px 35px;
+}
+
+nav ul li:nth-child(1) {
+    background-color: bisque;
+}
+
+a {
+    color: deeppink;
+    text-decoration-line: none;
+}
+
+.hamburger-nav {
+    display: none;
+}
+
+#about {
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "Image Heading" "Background Paragraph";
+    height: 80vh;
+    width: 100%;
+}
+
+#person {
+    grid-area: Image;
+}
+
+#person-bg {
+    grid-area: Background;
+}
+
+#heading {
+    display: flex;
+    grid-area: Heading;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    margin: 0;
+}
+
+#paragraph {
+    grid-area: Paragraph;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 50%;
+    padding: 0 15em;
+}
+
+#about img {
+    position: relative;
+}
+
+img[id="person"] {
+    height: 300px;
+    left: 340px;
+    position: relative;
+    top: 210px;
+    width: 300px;
+    z-index: 2;
+}
+
+img[id="person-bg"] {
+    width: 440px;
+    height: 340px;
+    z-index: 1;
+    left: 120px;
+    bottom: 160px;
+}
+
+#portfolio {
+    background-color: aliceblue;
+    height: 70vh;
+    width: 100%;
+}
+
+.portfolio-heading {
+    margin-bottom: 20px;
+}
+
+.portfolio-heading h2 {
+    text-align: center;
+    margin: 0;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-list p {
+    position: relative;
+    z-index: 1;
+    margin: 0 315px;
+    bottom: 30px;
+}
+
+.portfolio-list img {
+    z-index: 0;
+    width: 40%;
+    height: 40%;
+    margin: 0 10px;
+}
+
+#contacts {
+    align-items: center;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    justify-content: center;
+    width: 100%;
+}
+
+#contacts p {
+    line-height: 1px;
+}
+
+.social-media {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-media img {
+    height: 30px;
+    margin: 0 10px;
+    width: 30px;
+}
+
+footer {
+    align-items: center;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    justify-content: center;
+    width: 100%;
+}
+
+.window {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 4;
+}
+
+.window-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        z-index: 2;
+    }
+
+    .nav-list.show {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="window" id="project-info">
+        <div class="window-content">
+            <h3 id="popup-title"></h3>
+            <p id="popup-content"></p>
+            <span class="close-btn" onclick="closeButton()">&times;</span>
+        </div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="hamburger" id="mobile-menu">
+                <span class="bar">-</span>
+                <span class="bar">-</span>
+                <span class="bar">-</span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Apollo Norm,</h1>
+        <h1>Full-Stack Web Developer</h1>
+    </header>
+    <section id="about">
+        <img id="person" src="../assets/images/person.jpeg" alt="person">
+        <img id="person-bg" src="../assets/images/image.jpg" alt="person-bg">
+        <h2 id="heading">ABOUT ME</h2>
+        <p id="paragraph">Hello, I'm Apollo Norm. One of the six flagship of UN. Suryana is very loving me, maybe because my name is so cool. Besides of that, maybe because my action in the movie is actually cool also right</p><br>
+    </section>
+    <section id="portfolio">
+        <div class="portfolio-heading">
+            <h2>PORTFOLIO</h2>
+        </div>
+        <div class="portfolio-list">
+            <img id="world" src="../assets/images/project1.png" alt="project-1">
+            <button class="open-window" data-title="Flash Card" data-content="You can see afa af aa aaf a">Info</button>
+            <img src="../assets/images/project2.png" alt="project-2">
+            <button class="open-window" data-title="Virtual Piano" data-content="You can see">Info</button>
+        </div>
+        <div class="portfolio-list">
+            <p>Flashcard</p><br>
+            <p>Virtual Piano</p><br>
+        </div>
+    </section>
+    <section id="contacts">
+        <h2>CONTACTS</h2>
+        <p>You can contact me at my <span><a href="https://hyperskill.org/projects/137/stages/732/implement">Linkedin</a></span> here</p>
+        <p>or phone number <a href="tel:089620885761">089620885761</a></p>
+        <div class="social-media">
+            <img src="../assets/images/facebook.svg" alt="fb">
+            <img src="../assets/images/github.svg" alt="github">
+            <img src="../assets/images/instagram%201.svg" alt="ig">
+            <img src="../assets/images/twitter.svg" alt="twt">
+        </div>
+    </section>
+    <footer>
+        <h2>Apollo Norm</h2>
+        <p>2024</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
